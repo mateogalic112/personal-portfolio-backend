@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_services_service_items",
+  "info": {
+    "name": "service items",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

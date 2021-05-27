@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_work_cards",
+  "info": {
+    "name": "card",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Created": {
+      "type": "date"
+    },
+    "technologies": {
+      "type": "string"
+    },
+    "github": {
+      "type": "text"
+    },
+    "featured": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slideshow": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

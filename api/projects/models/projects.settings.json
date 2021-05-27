@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tech_icons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tech.tech-icons"
+    },
+    "work": {
+      "type": "component",
+      "repeatable": true,
+      "component": "work.card"
+    }
+  }
+}
