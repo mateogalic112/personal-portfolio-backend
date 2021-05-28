@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inquiries",
+  "info": {
+    "name": "inquiry",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "from": {
+      "type": "email"
+    },
+    "message": {
+      "type": "text"
+    },
+    "subject": {
+      "type": "string"
+    }
+  }
+}

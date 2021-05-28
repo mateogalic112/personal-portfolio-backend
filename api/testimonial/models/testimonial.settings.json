@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonials",
+  "info": {
+    "name": "testimonial"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "person": {
+      "type": "string"
+    },
+    "work": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "review": {
+      "type": "text"
+    }
+  }
+}
