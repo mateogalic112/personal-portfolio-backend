@@ -7,6 +7,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "POST",
+      "path": "/emails",
+      "handler": "email.create",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }

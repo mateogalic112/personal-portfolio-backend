@@ -1,5 +1,7 @@
 "use strict";
 
+const { sanitizeEntity } = require("strapi-utils");
+
 /**
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
  * to customize this controller
@@ -12,7 +14,11 @@ module.exports = {
    * @return {void}
    */
   send: async (ctx) => {
-    const to = ["mateogalic112@gmail.com", "mateo@indigo-web.design"];
+    const emails = await strapi.services.email.find(ctx.query);
+    const to = emails.map(
+      (entity) =>
+        sanitizeEntity(entity, { model: strapi.models.email }).user_mail
+    );
     const subject = "HEy";
     const html = "<h1>Hello</h1>";
 
