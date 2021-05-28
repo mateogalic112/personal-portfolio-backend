@@ -12,7 +12,7 @@ module.exports = {
    * @return {void}
    */
   send: async (ctx) => {
-    const to = "mateogalic112@gmail.com";
+    const to = ["mateogalic112@gmail.com", "mateo@indigo-web.design"];
     const subject = "HEy";
     const html = "<h1>Hello</h1>";
 
