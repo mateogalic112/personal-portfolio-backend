@@ -9,41 +9,9 @@
       }
     },
     {
-      "method": "GET",
-      "path": "/inquiries/count",
-      "handler": "inquiry.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/inquiries/:id",
-      "handler": "inquiry.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
       "method": "POST",
       "path": "/inquiries",
       "handler": "inquiry.create",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "PUT",
-      "path": "/inquiries/:id",
-      "handler": "inquiry.update",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "DELETE",
-      "path": "/inquiries/:id",
-      "handler": "inquiry.delete",
       "config": {
         "policies": []
       }
